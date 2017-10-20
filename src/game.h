@@ -2,7 +2,7 @@
 #define GAME_H_
 
 #include <QGraphicsView>
-
+class HexBoard;
 class Game:public QGraphicsView
 {
 public:
@@ -12,6 +12,7 @@ public:
   void Start();
 private:
   QGraphicsScene *scene_;
+  HexBoard *hex_board_;
 
 };
 

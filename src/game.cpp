@@ -1,5 +1,6 @@
 #include "game.h"
 #include "hex.h"
+#include "HexBoard.h"
 #include <QGraphicsScene>
 
 Game::Game(QWidget* parent)
@@ -17,7 +18,6 @@ Game::Game(QWidget* parent)
 
 void Game::Start()
 {
-  Hex *hex = new Hex;
-  scene_->addItem(hex);
-  hex->setPos(70, 70);
+  hex_board_ = new HexBoard();
+  hex_board_->PlaceHexes();
 }

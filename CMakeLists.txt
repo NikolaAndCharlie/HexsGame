@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.5)
-project(learning)
+project(HexGame)
 
 set(CMAKE_CURRENT_INCLUDE_DIR ON)
 set(CMAKE_AUTOMOC ON)
@@ -16,8 +16,8 @@ file(GLOB SRC src/*.cpp)
 file(GLOB HDR src/*.h)
 
 #qt5_add_resources(RC src/projectchooser.qrc)
-add_executable(qtlearning WIN32 ${SRC} ${HDR} ${RC})
-target_link_libraries(qtlearning ${Qt_Lib})
+add_executable(HexGame WIN32 ${SRC} ${HDR} ${RC})
+target_link_libraries(HexGame ${Qt_Lib})
 
 
 
